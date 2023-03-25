@@ -1,6 +1,7 @@
 body {
-	background-color: #F2F5F7;
-	font-family: 'Open Sans',Arial,sans-serif;
+	background-color: black;
+	font-family: 'Poppins', sans-serif;
+  margin: 1rem 7rem;
 }
 
 /* INICIO DE LA SECCION HEADER */
@@ -57,7 +58,7 @@ body {
   }
   
   .button:hover { /* cuando el mouse se pone sobre el botón */
-    color: #ffffff; /* color del texto que mostrará */
+    color: black; /* color del texto que mostrará */
     transition-delay: .5s; /* que tan lenta será la animacion */
     
   }
@@ -82,9 +83,57 @@ body {
   .button:hover::after {
     height: 100%; /* indica la altura a la que se extenderá el fondo rojo */
     transition-delay: 0.4s; /*retraso de la animacion */
-    background-color: rgb(236, 11, 11); /* color de fondo que se extiende */
+    background-color: rgb(47, 255, 144); /* color de fondo que se extiende */
   }
   
   /* FIN DE LA SECCION HEADER */
 
 
+/* INICIO DE LA SECCION BANNER */
+
+.banner {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner__Texts__Button {
+    background: rgb(47, 255, 144);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 1rem;
+    border: none;
+    margin: 7rem 0 3rem 7rem;
+}
+
+.banner__Texts__Subtitle {
+    color: white;
+    margin: 2rem 7rem 3rem 7rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    
+
+}
+
+.banner__Texts__Paragraph {
+    color: white;
+    margin: 2rem 7rem;
+    line-height: 1.5rem;
+    font-size: smaller;
+    font-weight: 200;
+    /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+
+}
+
+.banner__Pic {
+    height: 50rem;
+   
+}
+
+about__Title {
+  color: white;
+}
+
+.about__Me {
+
+}
