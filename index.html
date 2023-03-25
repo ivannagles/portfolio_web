@@ -18,8 +18,8 @@
             <img src="./img/logo_IN.png" alt="Logo Ivan Nagles" class = "logo__Img">
         
             <nav class="navbar">
-                <a href="#" class = "navbar__Links button">HOME</a>
-                <a href="#" class = "navbar__Links button">ABOUT</a>
+                <a href="index.html" class = "navbar__Links button">HOME</a>
+                <a href="#anchor__About-me" class = "navbar__Links button">ABOUT</a>
                 <a href="#" class = "navbar__Links button">SKILLS</a>
                 <a href="#" class = "navbar__Links button">PORTFOLIO</a>
                 <a href="#" class = "navbar__Links button">SERVICES</a>
@@ -30,19 +30,90 @@
 
     <main>
         <section class="banner">
-            <div class = "banner__texts">
-                <button class="banner__Texts__Button">Front End Developer in Training</button>
-                <h1 class="banner__Texts__Subtitle">Hello!, I'm Ivan Nagles. <br> All great story have a beginning</h1>
-                <p class="banner__Texts__Paragraph">I am a Commercial Consultant with 7 years of experience and broad bases <br> in IT area, Technical Support and Customer Service for 12 years. In fact,  I currently <br> joined the Oracle One project at Alura Latam to reach Front End Dev degree. </p>
+            <div class = "banner__Texts">
+                <button class="banner__Texts-Button">Front End Developer in Training</button>
+                <h1 class="banner__Texts-Title">Hello!, I'm Ivan Nagles.</h1>
+                <h3 class="banner__Texts-Subtitle"> All great story have a beginning...</h3>
+                <p class="banner__Texts-Paragraph">I am a Commercial Consultant with 7 years of experience and <br> broad bases in IT area, Technical Support and Customer Service <br> for 12 years. In fact,  I currently  joined the Oracle One project at <br> Alura Latam to reach Front End Dev degree. </p>
             </div>
-            <div class="banner__Image">
-                <img class = "banner__Pic" src="./img//Ivan Nagles b_black.png">
+            <div class="banner__Image"></div>
+        </section>
+
+        <section class="about-me" id = "anchor__About-me">
+            <div class="about__Progress-Container">
+                <h2 class = "about__Progress-Title">Strengths</h2>
+                <ul class = "about__Progress-Bar-List">
+                  <li>
+                    <progress id="progressBar1" value="85" max="100"></progress>
+                    <h2>Analytical and organized</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar2" value="85" max="100"></progress>
+                    <h2>Sense of belonging</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar3" value="90" max="100"></progress>
+                    <h2>Learning curve</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar4" value="90" max="100"></progress>
+                    <h2>Oriented to work for results</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar5" value="90" max="100"></progress>
+                    <h2>Focus on Customer Satisfaction</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar6" value="90" max="100"></progress>
+                    <h2>Problem-solving initiative</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar7" value="80" max="100"></progress>
+                    <h2>Teamwork</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar8" value="90" max="100"></progress>
+                    <h2>Attention to detail</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar9" value="100" max="100"></progress>
+                    <h2>Strong work ethic</h2>
+                  </li>
+                  <li>
+                    <progress id="progressBar10" value="80" max="100"></progress>
+                    <h2>Attentive listening</h2>
+                  </li>
+                </ul>
+            </div>
+              
+            <div class="about__Container">
+                <h2 class="about__Container-Title">About me</h2>
+                <p class="about__Container-Paragraph">I specialized in B2B consultative technology sales and have participated in the planning, execution and start-up of IT acquisition, update and integration processes. Actually i'm in training to be Front End Developer and I am working on expanding my knowledge.</p>
+                <h3 class="about__Container-Subtitle">Personal Info</h3>
+                <table class = "about__Container-Table">
+                    <tbody>
+                        <tr>
+                            <td>Names: Ivan Dario</td>
+                            <td>Surnames: Nagles Ortiz</td>
+                        </tr>
+                        <tr>
+                            <td>Nationality: Colombian</td>
+                            <td>Residence: Bogota</td>
+                        </tr>
+                        <tr>
+                            <td>Languages: Spanish (Native), English (B1)</td>
+                            <td>Availability: Immediate</td>
+                        </tr>
+                        <tr>
+                            <td>Email: <a href="mailto:ivannagles@gmail.com">ivannagles@gmail.com</a></td>
+                            <td>Mobile: <a href="tel:+573053819780">+573053819780</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="about__Container-CV-Button">Download CV</button>
             </div>
         </section>
-        <section class="about__Me">
-            <h2 class = "about__Title">About me</h2>
-            <p class="about__Paragraph"></p>
-         </section>
     </main>
+    <script src = "./anchor_scroll.js"></script>
 </body>
 </html>

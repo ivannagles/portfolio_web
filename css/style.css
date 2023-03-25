@@ -1,7 +1,7 @@
 body {
 	background-color: black;
 	font-family: 'Poppins', sans-serif;
-  margin: 1rem 7rem;
+  color: white;
 }
 
 /* INICIO DE LA SECCION HEADER */
@@ -13,8 +13,8 @@ body {
 }
 
 .logo__Img {
-    width: 8%; /* tamaño del logo */
-    
+    width: 10%; /* tamaño del logo */
+    padding: 0 3%;
 }
 
 .navbar {
@@ -93,47 +93,144 @@ body {
 
 .banner {
   display: flex;
-  flex-direction: row;
+  
 }
 
-.banner__Texts__Button {
-    background: rgb(47, 255, 144);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    border-radius: 2px;
-    padding: 1rem;
-    border: none;
-    margin: 7rem 0 3rem 7rem;
+.banner__Texts-Button {
+  background: rgb(47, 255, 144);;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 1rem;
+  border: none;
+  margin: 10% 0 5% 10%;
 }
 
-.banner__Texts__Subtitle {
-    color: white;
-    margin: 2rem 7rem 3rem 7rem;
-    font-size: 3rem;
-    line-height: 3rem;
-    
-
-}
-
-.banner__Texts__Paragraph {
-    color: white;
-    margin: 2rem 7rem;
-    line-height: 1.5rem;
-    font-size: smaller;
-    font-weight: 200;
-    /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+.banner__Texts-Title {
+  margin: 5% 0 5% 10%;
+  font-size: 3rem;
+  width: 100%;
 
 }
 
-.banner__Pic {
-    height: 50rem;
-   
+.banner__Texts-Subtitle {
+  margin: 10% 0 5% 10%;
+  font-size: 1.5rem;
+
 }
 
-about__Title {
+.banner__Texts-Paragraph {
+  margin: 10%;
+  line-height: 1.5rem;
+  font-size: smaller;
+  font-weight: 200;
+  letter-spacing: 1px;
+  opacity: 60%;
+  width: 100%;
+  /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+
+}
+
+.banner__Image {
+  background-image: url('/Portfolio_Ivan_Nagles/img/Ivan\ Nagles\ b_black.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 40%;
+  margin: auto;
+}
+
+.about-me {
+  display: flex;
+  width: 100%;
+}
+
+.about__Progress-Container {
+  padding: 3% 0 3% 5%;
+  width: 50%;
+  height: 100vh;
+  line-height: 1.5rem;
+}
+
+.about__Container {
+  padding: 3% 0 3% 5%;
+  width: 80%;
+}
+
+.about__Progress-Title {
+  margin: 2rem 0rem;
+  font-size: xx-large;
+}
+
+progress {
+  width: 80%; /* ancho del espacio de la barra */
+  height: 10px; /* alto de la barra */
+  background: rgb(47, 255, 144); /* fondo de la barra*/
+  padding: 0.1rem; /*separacion interna */ 
+  border-radius: 5px; /*borde redondeado */
+}
+
+.about__Progress-Bar-List {
+  animation: progress 15s linear forwards; /*nombre de la animacion, duracion, tipo movimiento, direccion */
+}
+
+@keyframes progress { /*nombre de la animacion */
+  from { width: 0%; } /*la barra debe comenzar en*/
+  to { width: 100%; } /*la animacion de la barra termina en lo que se parametrizó*/
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(47, 255, 144); /* Cambiar el color de la barra de progreso */
+}
+
+.about__Container-Title {
+  margin: 2rem;
+  font-size: xx-large;
+  width: 50%;
+}
+
+.about__Container-Paragraph {
+  margin: 2rem;
+  width: 80%;
+  line-height: 2rem;
+  font-weight: 200;
+  opacity: 60%;
+}
+
+.about__Container-Subtitle {
+  margin: 2rem;
+  font-size: large;
+}
+
+.about__Container-Table {
+  margin: 2rem;
+  line-height: 2rem;
+  font-weight: 200;
+  width: 90%;
+  opacity: 60%;
+  
+}
+
+th, td {
+  letter-spacing: 1px;
+}
+
+a[href] {
   color: white;
+  text-decoration: none;
+  cursor: pointer;
+  /*transform: scale(1.2); para aumentar tamaño del pointer*/
 }
 
-.about__Me {
-
+.about__Container-CV-Button {
+  background: rgb(47, 255, 144);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  width: 15rem;
+  text-transform: uppercase;
 }
