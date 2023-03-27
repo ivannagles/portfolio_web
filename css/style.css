@@ -77,7 +77,7 @@ body {
     width: 100%; /* indica que ocupará todo el espacio de lado a lado */
     transition: .4s ease; /* duracion y efecto de la transicion */
     z-index: -2; /* configura que el elemento quede detrás de los demás */
-    
+    border-radius: 3px 3px 0 0; /* redondear bordes solo superiores */
   }
   
   .button:hover::after {
@@ -149,7 +149,7 @@ body {
 .about__Progress-Container {
   padding: 3% 0 3% 5%;
   width: 50%;
-  height: 100vh;
+  
   line-height: 1.5rem;
 }
 
@@ -176,12 +176,12 @@ progress {
 }
 
 @keyframes progress { /*nombre de la animacion */
-  from { width: 0%; } /*la barra debe comenzar en*/
+  from { width: 50%; } /*la barra debe comenzar en*/
   to { width: 100%; } /*la animacion de la barra termina en lo que se parametrizó*/
 }
 
 progress::-webkit-progress-value {
-  background-color: rgb(47, 255, 144); /* Cambiar el color de la barra de progreso */
+  background-color: rgb(47, 255, 144); /* el color de la barra de progreso */
 }
 
 .about__Container-Title {
@@ -204,23 +204,22 @@ progress::-webkit-progress-value {
 }
 
 .about__Container-Table {
-  margin: 2rem;
-  line-height: 2rem;
-  font-weight: 200;
-  width: 90%;
-  opacity: 60%;
+  margin: 0 5%;
+  line-height: 2rem; /* espacio de interlineado */
+  font-weight: 200; /* como una negrilla al texto */
+  width: 90%; /* espacio a utilizar */
+  opacity: 60%; /* nivel de opacidad del contenido de la tabla */
   
 }
 
 th, td {
-  letter-spacing: 1px;
+  letter-spacing: 1px; /* espaciado de las letras para que sea más legible */
 }
 
 a[href] {
   color: white;
-  text-decoration: none;
-  cursor: pointer;
-  /*transform: scale(1.2); para aumentar tamaño del pointer*/
+  text-decoration: none; /* eliminar el subrayado de los links */
+  cursor: pointer; /* a manito cuando el ursor está sobre un link */
 }
 
 .about__Container-CV-Button {
@@ -230,7 +229,78 @@ a[href] {
   border-radius: 3px;
   padding: 1rem;
   border: none;
-  margin: 2rem;
+  margin: 5%;
   width: 15rem;
-  text-transform: uppercase;
+  text-transform: uppercase; /*pasar texto a mayusculas */
 }
+
+/* FIN DE LA SECCION ABOUT */
+
+
+/* INICIA SECCION MY SKILLS */
+
+.my-Skills__title {
+  font-size: xx-large;/* tamaño de la fuente */
+  width: 100%; /* espacio de ancho a utilizar*/
+  text-align: center; /* centra el texto en el espacio asignado */
+  padding: 3rem 0; /* espaciado vertical */
+}
+
+.my-skills__Containers-Group {
+  display: flex; 
+  flex-direction: row; /* disposición de la orientación de todos los containers */ 
+  flex-wrap: wrap; /* según el tamaño de la ventana se auto ajustan enviando los divs restantes abajo. */
+
+}
+
+.my-Skills__Container {
+  display: flex;
+  width: calc(100% / 10);/* ancho del container */
+  height: 25%; /* altura del circular progress */
+  padding: 20px 0; /* padding sup e inf, laterales */
+  border-radius: 8px; /*borde redondeado del container*/
+  background: rgba(92, 86, 86, 0.778); /* fondo del container*/
+  row-gap: 20px; /* espacio vertical entre el circular bar y el texto */
+  flex-direction: column; /* orientacion del circular progress */
+  align-items: center; /* centra elementos en el container*/
+  margin: 2% 1% 2% 5%;
+
+}
+
+.my-Skills__Circular-Bar {
+  position: relative; /* determino ubicacion */
+  height: 90px; /* altura del circulo externo */
+  width: 90px; /* ancho del circulo externo */
+  border-radius: 50%; /*borde redondeado */
+  background: conic-gradient( red 3.6deg, rgb(47, 255, 144) 0deg); /* colores del circular progress*/
+  display: flex;
+  align-items: center; /*centrado de elementos en y */
+  justify-content: center; /*centrado de elementos en y */
+}
+
+.my-Skills__Circular-Bar::before {
+  content: "";
+  position: absolute; /* su ubicacion estará por dentro de la posicion del elemento padre */
+  height: 70px; /* altura del circulo interno */
+  width: 70px; /* ancho del circulo interno */
+  border-radius: 50%; /* borde redondeado */ 
+  background-color: #fff; /* color de fondo del centro del circular bar */
+}
+
+.my-Skills__Circular-Bar__Progress-value {
+  position: relative;
+  font-size: 20px; /* tamaño de letra del porcentaje */
+  font-weight: 600; /* negrilla del porcentaje */
+  color: rgb(0, 0, 0); /* color del porcentaje */
+
+}
+
+.my-Skills__Circular-Bar__Header-Text {
+  font-size: 15px; /* tamaño del texto del Skill */
+  font-weight: 500; /* negrilla del texto */
+  color: #fff; /* color del texto del header */
+  text-align: center;
+}
+
+/* FIN DE LA SECCION MY SKILLS */
+

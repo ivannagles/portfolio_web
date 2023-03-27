@@ -1,7 +1,15 @@
-const link = document.querySelector('a[href="#anchor__About-me"]'); /*me permite acceder al link */
+const about_Link = document.querySelector('a[href="#anchor__About-me"]'); /*me permite acceder al link */
 
-link.addEventListener('click', (event) => { /* Agrego evento de clic al enlace*/
+about_Link.addEventListener('click', (event) => { /* Agrego evento de clic al enlace*/
   event.preventDefault(); /*prevengo que no se ejecute */
   const destination = document.querySelector('#anchor__About-me'); /*accedo a la seccion de destino*/
+  destination.scrollIntoView({ behavior: 'smooth' }); /*genero desplazamiento, puede ser smooth, instant o auto*/
+});
+
+const skills_Link = document.querySelector('a[href="#anchor__My-Skills"]'); /*me permite acceder al link */
+
+skills_Link.addEventListener('click', (event) => { /* Agrego evento de clic al enlace*/
+  event.preventDefault(); /*prevengo que no se ejecute */
+  const destination = document.querySelector('#anchor__My-Skills'); /*accedo a la seccion de destino*/
   destination.scrollIntoView({ behavior: 'smooth' }); /*genero desplazamiento, puede ser smooth, instant o auto*/
 });
