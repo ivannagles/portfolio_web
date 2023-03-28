@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <header class="header">
@@ -21,9 +22,9 @@
                 <a href="index.html" class = "navbar__Links button">HOME</a>
                 <a href="#anchor__About-me" class = "navbar__Links button">ABOUT</a>
                 <a href="#anchor__My-Skills" class = "navbar__Links button">MY SKILLS</a>
-                <a href="#" class = "navbar__Links button">PORTFOLIO</a>
-                <a href="#" class = "navbar__Links button">SERVICES</a>
-                <a href="#" class = "navbar__Links button">CONTACT</a>
+                <a href="#anchor__Portfolio" class = "navbar__Links button">PORTFOLIO</a>
+                <!--<a href="#" class = "navbar__Links button">SERVICES</a>-->
+                <a href="#anchor__Contact" class = "navbar__Links button">CONTACT ME</a>
             </nav>
         </div>
     </header>
@@ -35,6 +36,11 @@
                 <h1 class="banner__Texts-Title">Hello!, I'm Ivan Nagles.</h1>
                 <h3 class="banner__Texts-Subtitle"> All great story have a beginning...</h3>
                 <p class="banner__Texts-Paragraph">I am a Commercial Consultant with 7 years of experience and <br> broad bases in IT area, Technical Support and Customer Service <br> for 12 years. In fact,  I currently  joined the Oracle One project at <br> Alura Latam to reach Front End Dev degree. </p>
+                <div class="banner__Container-Rrss">
+                    <a href="https://www.linkedin.com/in/ivannagles" target="_blank"><img src="./img/LinkedIn_.png" class="banner__Container-Rrss-logos" alt="logo LinkedIn"></a>
+                    <a href="https://www.github.com/ivannagles" target="_blank"><img src="./img/Git_Hub.png" class="banner__Container-Rrss-logos" alt="logo Git Hub"></a>
+                    <a href="https://www.twitter.com/ivannagles" target="_blank"><img src="./img/Twitter.png" class="banner__Container-Rrss-logos" alt="logo Twitter"></a>
+                </div>
             </div>
             <div class="banner__Image"></div>
         </section>
@@ -155,7 +161,7 @@
                     </div>
                     <span class = "my-Skills__Circular-Bar__Header-Text">NodeJS</span>
                 </div>
-                <div class = "my-Skills__Container" id="Emmet">
+                <div class = "my-Skills__Container" id="Linux Unhatched">
                     <div class = "my-Skills__Circular-Bar">
                         <span class = "my-Skills__Circular-Bar__Progress-value">0%</span>
                     </div>
@@ -194,72 +200,110 @@
             </div>
         </section>
 
-        <section class="portfolio"></section>
-        <h2 class="portfolio__Title">Portfolio</h2>
-        <div class = "portfolio__Projects">
-            <div class="portfolio__Barbershop">
-                <img src="./img/Barberia_Alura.jpeg" alt="Alura Barbershop Project" class="portfolio__Barbershop-Img">
-                <div>
-                    <h3 class="portfolio__Text-Right">Project: Alura Barbershop</h3>
-                    <h3 class="portfolio__Text-Description-Right">Description: HTML & CSS applying responsive design for Desktop and Mobile. </h3>
-                    <a href = "https://ivannagles.github.io/reto_barberia_alura/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+        <section class="portfolio" id = "anchor__Portfolio">
+            <h2 class="portfolio__Title">Portfolio</h2>
+            <div class = "portfolio__Projects">
+                <div class="portfolio__Barbershop">
+                    <img src="./img/Barberia_Alura.jpeg" alt="Alura Barbershop Project" class="portfolio__Barbershop-Img">
+                    <div>
+                        <h3 class="portfolio__Text-Right">Project: Alura Barbershop</h3>
+                        <h3 class="portfolio__Text-Description-Right">Description: HTML & CSS applying responsive design for Desktop and Mobile. </h3>
+                        <a href = "https://ivannagles.github.io/reto_barberia_alura/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
+                </div>
+                <div class="portfolio__Fruit">
+                    <div>
+                        <h3 class="portfolio__Text-Left">Fruto & Fruta Web</h3>
+                        <h3 class="portfolio__Text-Description-Left">HTML & CSS applying BEM-ACSS and Responsive Design for Desktop, Tablet and Mobile.</h3>
+                        <a href = "https://ivannagles.github.io/WebFruta-Fruto/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
+                    <img src="./img/web_Fruta&Fruto.jpeg" alt="Fruta & Fruto Web Project" class="portfolio__Fruit-Img">
+                    
+                </div>
+                <div class="portfolio__Mini">
+                    <img src="./img/Web_Mini_Alura.jpeg" alt="Mini Alura Project" class="portfolio__Mini-Img">
+                    <div>
+                        <h3 class="portfolio__Text-Right">Mini Alura Web</h3>
+                        <h3 class="portfolio__Text-Description-Right">HTML & CSS applying Flexbox and Responsive Design for Desktop and Mobile. </h3>
+                        <a href = "https://ivannagles.github.io/mini_web_site_Alura_flexbox/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
+                </div>
+                <div class="portfolio__Apeperia">
+                    <div>
+                        <h3 class="portfolio__Text-Left">Apeperia Web</h3>
+                        <h3 class="portfolio__Text-Description-Left">HTML & CSS replicating web according to the Figma desing with Responsive Design for Desktop, Tablet and Mobile. </h3>
+                        <a href = "https://ivannagles.github.io/responsive_layouts/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
+                    <img src="./img/web_Apeperia.jpeg" alt="Apeperia Web Project" class="portfolio__Apeperia-Img">
+                </div>
+                <div class="portfolio__Portfolio">
+                    <img src="./img/Web Portfolio.jpeg" alt="Portfolio Web Challenge" class="portfolio__Portfolio-Img">
+                    <div>
+                        <h3 class="portfolio__Text-Right">Portfolio Web Challenge</h3>
+                        <h3 class="portfolio__Text-Description-Right">HTML, CSS and Javascript applying BEM-ACSS, contact form with validity and responsive design for Desktop, Tablet and Mobile.</h3>
+                        <a href = "https://ivannagles.github.io/portfolio_web" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
+                </div>
+                <div class="portfolio__Encoder">
+                    <div>
+                        <h3 class="portfolio__Text-Left">Text Encoder Challenge</h3>
+                        <h3 class="portfolio__Text-Description-Left">Challenge: Develop program that encode/decode text according some rules using HTML, CSS and Javascript. </h3>
+                        <a href = "https://ivannagles.github.io/desafio_encriptador_de_texto/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
+                    <img src="./img/Text_Encoder.jpeg" alt="Text Encoder Web Challenge" class="portfolio__Encoder-Img">
+                </div>
+                <div class="portfolio__Paint">
+                    <img src="./img/paint on web.jpeg" alt="Paint on Web Challenge" class="portfolio__Paint-Img">
+                    <div>
+                        <h3 class="portfolio__Text-Right">Paint on Web Challenge</h3>
+                        <h3 class="portfolio__Text-Description-Right">Challenge: Develop program using Canva completely for paint.</h3>
+                        <a href = "https://ivannagles.github.io/paint_on_web/" target = "_blank" class = "portfolio__Button">Watch Project</a>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio__Fruit">
-                <div>
-                    <h3 class="portfolio__Text-Left">Fruto & Fruta Web</h3>
-                    <h3 class="portfolio__Text-Description-Left">HTML & CSS applying BEM-ACSS and Responsive Design for Desktop, Tablet and Mobile.</h3>
-                    <a href = "https://ivannagles.github.io/WebFruta-Fruto/" target = "_blank" class = "portfolio__Button">Watch Project</a>
-                </div>
-                <img src="./img/web_Fruta&Fruto.jpeg" alt="Fruta & Fruto Web Project" class="portfolio__Fruit-Img">
-                
+        </section>
+
+        <section class="form" id="anchor__Contact">
+            <div class="form_Container">
+                <h2 class="form__Title">Contact Me</h2>
+                <form action="./registro_concluido.html" class="form">
+                    <fieldset>
+                        <legend class="form__Label">Basic Information:</legend>
+                        <div class="input-container">
+                            <label class="input-label" for="name">Name and Surname</label>
+                            <span class="input-message-error">This field is not valid</span>
+                            <input name="name" id="name" class="input" type="text" placeholder="Your Name" required minlength="6" maxlength="50">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label" for="email">Email</label>
+                            <span class="input-message-error">This field is not valid</span>
+                            <input name="email" id="email" class="input" type="email" placeholder="Your email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Debes ingresar un correo electrónico válido, con este formato de ejemplo: martymcfly@gmail.com">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="form__Label">Details:</legend>
+                        <div class="input-container">
+                            <label class="input-label" for="subject">Subject:</label>
+                            <span class="input-message-error">This field is not valid</span>
+                            <input name="Subject" id="subject" class="input" type="text" placeholder="Write the subject" required minlength="6" maxlength="50" title="Debes ingresar mínimo 6 caracteres y un máximo de 50.">
+                        </div>
+                        <div class="input-container">
+                            <label class="input-label" for="message">Leave your message:</label>
+                            <span class="input-message-error">This field is not valid</span>
+                            <textarea rows="10" id="message" name="message" required minlength="10" maxlength="1500" placeholder="Write the matter that motivates you to contact me"></textarea> 
+                        </div>
+                    </fieldset>
+                        <button class="form__Button">Submit</a>
+                </form>
             </div>
-            <div class="portfolio__Mini">
-                <img src="./img/Web_Mini_Alura.jpeg" alt="Mini Alura Project" class="portfolio__Mini-Img">
-                <div>
-                    <h3 class="portfolio__Text-Right">Mini Alura Web</h3>
-                    <h3 class="portfolio__Text-Description-Right">HTML & CSS applying Flexbox and Responsive Design for Desktop and Mobile. </h3>
-                    <a href = "https://ivannagles.github.io/mini_web_site_Alura_flexbox/" target = "_blank" class = "portfolio__Button">Watch Project</a>
-                </div>
-            </div>
-            <div class="portfolio__Apeperia">
-                <div>
-                    <h3 class="portfolio__Text-Left">Apeperia Web</h3>
-                    <h3 class="portfolio__Text-Description-Left">HTML & CSS replicating web according to the Figma desing with Responsive Design for Desktop, Tablet and Mobile. </h3>
-                    <a href = "https://ivannagles.github.io/responsive_layouts/" target = "_blank" class = "portfolio__Button">Watch Project</a>
-                </div>
-                <img src="./img/web_Apeperia.jpeg" alt="Apeperia Web Project" class="portfolio__Apeperia-Img">
-            </div>
-            <div class="portfolio__Portfolio">
-                <img src="./img/Web Portfolio.jpeg" alt="Portfolio Web Challenge" class="portfolio__Portfolio-Img">
-                <div>
-                    <h3 class="portfolio__Text-Right">Portfolio Web Challenge</h3>
-                    <h3 class="portfolio__Text-Description-Right">HTML, CSS and Javascript applying BEM-ACSS, contact form with validity and responsive design for Desktop, Tablet and Mobile.</h3>
-                    <a href = "https://ivannagles.github.io/portfolio_web" target = "_blank" class = "portfolio__Button">Watch Project</a>
-                </div>
-            </div>
-            <div class="portfolio__Encoder">
-                <div>
-                    <h3 class="portfolio__Text-Left">Text Encoder Challenge</h3>
-                    <h3 class="portfolio__Text-Description-Left">Challenge: Develop program that encode/decode text according some rules using HTML, CSS and Javascript. </h3>
-                    <a href = "https://ivannagles.github.io/desafio_encriptador_de_texto/" target = "_blank" class = "portfolio__Button">Watch Project</a>
-                </div>
-                <img src="./img/Text_Encoder.jpeg" alt="Text Encoder Web Challenge" class="portfolio__Encoder-Img">
-            </div>
-            <div class="portfolio__Paint">
-                <img src="./img/paint on web.jpeg" alt="Paint on Web Challenge" class="portfolio__Paint-Img">
-                <div>
-                    <h3 class="portfolio__Text-Right">Paint on Web Challenge</h3>
-                    <h3 class="portfolio__Text-Description-Right">Challenge: Develop program using Canva completely for paint.</h3>
-                    <a href = "https://ivannagles.github.io/paint_on_web/" target = "_blank" class = "portfolio__Button">Watch Project</a>
-                </div>
-            </div>
-        </div>
+        </section>
+    
 
     </main>
     <script src = "./JS/anchor_scroll.js"></script>
     <script src = "./JS/circular-Progress-Bar.js"></script>
     <script src = "./JS/skill_Containers.js"></script>
-
+    <script src="./JS/validaciones.js" type="module"></script>
+    <script src="./Js/app.js" type="module"></script>
 </body>
 </html>
