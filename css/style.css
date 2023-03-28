@@ -216,23 +216,44 @@ th, td {
   letter-spacing: 1px; /* espaciado de las letras para que sea más legible */
 }
 
-a[href] {
+ .contacto {
   color: white;
   text-decoration: none; /* eliminar el subrayado de los links */
   cursor: pointer; /* a manito cuando el ursor está sobre un link */
 }
 
+.about__Container-CV {
+  position: relative;
+  width: 8rem;
+}
+
 .about__Container-CV-Button {
-  background: rgb(47, 255, 144);
+  display: inline-block;
+  background: transparent;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   border-radius: 3px;
-  padding: 1rem;
-  border: none;
-  margin: 5%;
-  width: 15rem;
-  text-transform: uppercase; /*pasar texto a mayusculas */
+  margin: 20% 5% 10% 27%;
+  padding: 15px;
+  border: 2px solid rgb(47, 255, 144);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(47, 255, 144);
+  position: relative;
+  width: 8rem;
 }
+
+.about__Container-CV-Button:hover {
+  background: rgb(47, 255, 144);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(47, 255, 144),
+        0 0 25px rgb(47, 255, 144),
+        0 0 50px rgb(47, 255, 144),
+        0 0 100px rgb(47, 255, 144);
+}
+
+
 
 /* FIN DE LA SECCION ABOUT */
 
@@ -304,3 +325,140 @@ a[href] {
 
 /* FIN DE LA SECCION MY SKILLS */
 
+/* INICIO DE LA SECCION PORTFOLIO */
+
+.portfolio__Title {
+  font-size: xx-large;/* tamaño de la fuente */
+  width: 100%; /* espacio de ancho a utilizar*/
+  text-align: center; /* centra el texto en el espacio asignado */
+  padding: 4rem 0; /* espaciado vertical */
+}
+
+.portfolio__Barbershop{
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Barbershop-Img {
+  width: 700px;
+  height: 400px;
+  margin: 0 0 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Text-Right {
+  margin: 0 15%;
+  padding: 0 0 1rem 0;
+}
+
+.portfolio__Text-Description-Right {
+  margin-left: 15%;
+  padding: 1rem 1rem 2rem 0;
+  line-height: 1.5rem;
+}
+.portfolio__Text-Left {
+  margin-left: 15%;
+  padding: 0 0 1rem 0;
+}
+
+.portfolio__Text-Description-Left {
+  margin-left: 15%;
+  padding: 1rem 0 2rem 0;
+  line-height: 1.5rem;
+}
+
+.portfolio__Fruit{
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Fruit-Img {
+  width: 700px;
+  height: 400px;
+  align-items: flex-end;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Mini {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Mini-Img {
+  width: 700px;
+  height: 400px;
+  margin: 5% 0 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Apeperia{
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Apeperia-Img {
+  width: 700px;
+  height: 400px;
+  align-items: flex-end;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Portfolio {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Portfolio-Img {
+  width: 700px;
+  height: 400px;
+  margin: 5% 0 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Encoder{
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Encoder-Img {
+  width: 700px;
+  height: 400px;
+  align-items: flex-end;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Paint {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__Paint-Img {
+  width: 700px;
+  height: 400px;
+  margin: 5% 0 5% 5%;
+  box-shadow: 11px -9px 16px -3px rgb(47, 255, 144), -13px 14px 16px -3px rgb(47, 255, 144);
+  border-radius: 5px;
+}
+
+.portfolio__Button {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(47, 255, 144);
+  border: none;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0.5rem 3rem;
+  margin: 0 15%;
+  text-decoration: none;
+}
+
+/* FIN DE LA SECCION PORTAFOLIO */

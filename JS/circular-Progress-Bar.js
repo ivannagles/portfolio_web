@@ -11,7 +11,7 @@ const percentages = {
   'Git': 80,
   'SFPC': 95,
   'Node JS': 30,
-  'Emmet': 90,
+  'Linux Unhatched': 95,
   'CCNA': 80,
   'IP': 90,
   'Cloud': 40,
